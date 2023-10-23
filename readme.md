@@ -15,7 +15,11 @@ sudo apt install plymouth-x11
 
 # Install
 
-The install script will make the ~/.local/bin/ directory if it doesn't exist already, put the plymouth-preview script there and adds it to PATH in .bashrc, just in case it ain't already added to PATH in your system. It will also add a symlink in /usr/local/bin to make the plymouth-preview script work properly when ran as root. If you have a different dedicated scripts directory already added to PATH, just copy the plymouth-preview script there and create the necesary symlink
+The install script will make the ~/.local/bin/ directory if it doesn't exist already, put the plymouth-preview script there and adds it to PATH in .bashrc, just in case it ain't already added to PATH in your system. It will also add a symlink in /usr/local/bin to make the plymouth-preview script work properly when ran as root. If you have a different dedicated scripts directory already added to your PATH, just copy the plymouth-preview script there and create the necesary symlink.
+
+# Uninstall
+
+The uninstall script will remove the symlinks '~/.local/bin/plymouth-preview' and '/usr/local/bin/plymouth-preview'. Everything else the install script did (like creating ~/.local/bin/ and adding it to PATH), just in case you will install other stuff in there, but you can remove those manually.
 
 ```
 git clone https://github.com/eylles/plymouth-preview
