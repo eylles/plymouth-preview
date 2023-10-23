@@ -7,7 +7,7 @@
 
 chk_root () {
   if [ ! $( id -u ) -eq 0 ]; then
-    echo Must be run as root
+    echo "The installer must be run as root (sudo)."
     exit
   fi
 }
