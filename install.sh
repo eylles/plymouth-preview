@@ -26,7 +26,7 @@ fi
 echo "[Info]: The next step might ask for your password to create a symbolic link."
 sudo ln -sf $HOME/.local/bin/plymouth-preview /usr/local/bin
 
-if [[ $SHELL = *"bash" ]]; then source ~/.bashrc
-elif [[ $SHELL = *"zsh" ]]; then source ~/.zshrc
+if [[ $SHELL = *"bash" ]]; then source "${HOME}/.bashrc"
+elif [[ $SHELL = *"zsh" ]]; then source "${HOME}/.zshrc"
 fi
 echo "[Info]: Successfully installed, enjoy!"
